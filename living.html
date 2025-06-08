@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CheckMate 생활 정보">
+  <meta name="author" content="CheckMate">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <title>CheckMate - 생활 정보</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+    }
+    h2 {
+      font-weight: 700;
+    }
+    .option-card {
+      background-color: #1abc9c; /* 메인 민트톤 */
+      border: none;
+      border-radius: 12px;
+      padding: 40px 20px;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .option-card:hover {
+      background-color: #16a085; /* hover시 조금 더 진한 민트 */
+      transform: translateY(-5px);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <h4>체크메이트 <img src="assets/images/logo-icon.png" alt=""></h4>
+            </a>
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html">Home</a></li>
+              <li class="scroll-to-section"><a href="index.html#features">체크리스트</a></li>
+              <li class="scroll-to-section"><a href="index.html#about">About Us</a></li>
+              <li class="scroll-to-section"><a href="index.html#services">기능</a></li>
+                        <li class="scroll-to-section d-flex align-items-center" style="height:100%;">
+                <div class="main-blue-button" style="margin: 0; position: relative;">
+                  <select id="language-select" style="
+                    border: none; 
+                    border-radius: 6px; 
+                    background-color: rgba(255,255,255,0.95); 
+                    color: #333; 
+                    padding: 10px 40px 10px 15px; 
+                    font-size: 16px;
+                    line-height: 1.2;
+                    appearance: none;
+                    min-width: 150px;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.15);">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="mn">Монгол</option>
+                    <option value="zh">中文</option>
+                    <option value="vi">Tiếng Việt</option>
+                  </select>
+                  <span style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); pointer-events: none; font-size: 12px; color: #333;">▼</span>
+                </div>
+              </li>
+            </ul>
+            <a class='menu-trigger'><span>Menu</span></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 생활 정보 메인 -->
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s" style="min-height: 300px;">
+    <div class="container text-center">
+      <h2 class="mt-5">🏠 생활 정보</h2>
+      <p class="mt-3">생활 필수 준비사항을 선택하세요</p>
+    </div>
+  </div>
+
+  <!-- 선택 버튼 -->
+  <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="option-card" onclick="location.href='hospital.html'">
+          병원 이용하기
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="option-card" onclick="location.href='bank.html'">
+          계좌 개설하기
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container text-center">
+      <p>Copyright © 2025 CheckMate. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

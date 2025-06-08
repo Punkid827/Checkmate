@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CheckMate - 병원 이용하기</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; font-size: 16px; }
+    input[type="checkbox"] { accent-color: #34ccc8; width: 20px; height: 20px; }
+    .step-btn { margin: 5px; padding: 15px 30px; font-weight: 600; font-size: 18px; border-radius: 8px; border: none; background-color: #ecf9f8; color: #34ccc8; transition: 0.3s; }
+    .step-btn:hover { background-color: #2bbcb9; color: white; }
+    .step-btn.active { background-color: #34ccc8; color: white; }
+    .check-card { width: 400px; }
+    .reset-btn { margin-top: 20px; background-color: #34ccc8; color: white; border: none; padding: 10px 20px; border-radius: 5px; transition: 0.3s; }
+    .reset-btn:hover { background-color: #2bbcb9; }
+  </style>
+</head>
+<body>
+  <div class="container text-center my-4">
+    <button class="step-btn active">Step 1</button>
+    <button class="step-btn">Step 2</button>
+    <button class="step-btn">Step 3</button>
+    <button class="step-btn">Step 4</button>
+  </div>
+  <div class="container my-4">
+    <div class="card shadow-sm mb-3 p-3 check-card">
+      <div class="form-check text-start d-flex justify-content-between align-items-center">
+        <div>
+          <input class="form-check-input step2" type="checkbox" id="s2_2">
+          <label class="form-check-label" for="s2_2">가까운 병원 위치 확인하기</label>
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="assets/images/magnifier-icon.png" onclick="showNearbyHospital()" style="width: 40px; height: 40px; cursor: pointer; margin-right: 10px;">
+          <img src="assets/images/map-icon.png" onclick="openNaverMap()" style="width: 40px; height: 40px; cursor: pointer;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openNaverMap() {
+      window.open("https://map.naver.com/", "_blank", "width=800,height=600");
+    }
+    function showNearbyHospital() {
+      alert("'네이버 지도'나 '카카오맵' 어플을 활용해 현재 위치 기준으로 검색하세요.");
+    }
+  </script>
+</body>
+</html>
